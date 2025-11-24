@@ -5,19 +5,6 @@ extra:
 
 nav:
   - Home: ./comunidad/introduccion.md
-  - Inicio:
-    - Nuestra mision: ./comunidad/mision.md
-    - Nuestra vision: ./comunidad/vision.md
-    - Nuestros principios: ./comunidad/principios.md
-    - Codigo de conducta: ./comunidad/codigo-conducta.md
-    - Como puedes participar: ./comunidad/como-participar.md
-    - Licencia: ./comunidad/licencia.md
-  - Desarrollo:
-    - Buenas practicas: ./desarrollo/buenas-practicas.md
-    - Error Handling Standard:
-      - Introduccion: ./desarrollo/error-handler/introduccion.md
-      - Estructura de respuestas: ./desarrollo/error-handler/respuestas.md
-      - Clasificacion de errores: ./desarrollo/error-handler/clasificacion-errores.md
 
 theme: 
   name: material

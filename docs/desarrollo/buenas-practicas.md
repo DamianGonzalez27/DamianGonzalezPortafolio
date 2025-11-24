@@ -1,1 +1,0 @@
-# Guia de buenas practicas en el desarrollo de software
