@@ -1,29 +1,68 @@
-site_name: NeuroNexoTec
-
-extra:
-  favicon: img/logo.png
+site_name: Damian Gonzalez
 
 nav:
-  - Home: ./comunidad/introduccion.md
+  - Home: comunidad/introduccion.md
+  - Practicas de trabajo:
+    - Diagnostico: practicas/diagnostico.md
+    - Diseño: practicas/diseño.md
+    - Arquitectura: practicas/arquitectura.md
+    - Infraestructura: practicas/infraestructura.md
+    - Automatizacion: practicas/automatizacion.md
+    - Observabilidad: practicas/observabilidad.md
+    - Seguridad: practicas/seguridad.md
+    - Calidad: practicas/calidad.md
+    - Entregas incrementales: practicas/entregas-incrementales.md
+    - Control de deuda tecnica: practicas/control-deuda-tecnica.md
+    - Comunicacion tecnica: practicas/comunicacion-tecnica.md
+    - Responsabilidad: practicas/responsabilidad.md
+    - Software alineado: practicas/software-alineado.md
+    - Estandarizacion: practicas/estandarizacion.md
+    - Transferencia de conocimiento: practicas/transferencia-conocimiento.md
+  - Estandares de calidad:
+    - Claridad del problema y del alcance: estandares/claridad-problema.md
+    - Criteriod de aceptacion explicitos: estandares/criterios-aceptacion.md
+    - Diseño tecnico justificable: estandares/diseño-tecnico.md
+    - Arquitectura coherente y consistemte: estandares/arquitectura-coherente.md
+    - Codigo legible y mantenible: estandares/codigo-legible.md
+    - Calidad funcional verificable: estandares/calidad-funcional.md
+    - Pruebas con proposito: estandares/pruebas-proposito.md
+    - Automatizacion de cliclo de vida:  estandares/automatizacion.md
+    - Observabilidad minima: estandares/observabilidad.md
+    - Seguridad minima: estandares/seguridad.md
+    - Manejo de errores: estandares/manejo-errores.md
+    - Rendimiento contextual: estandares/rendimiento.md
+    - Deuda tecnica identificada y registrada: estandares/deuda-tecnica.md
+    - Documentacion suficiente: estandares/documentacion.md
+    - Operabilidad y mantenibilidad: estandares/operabilidad-mantenibilidad.md
+    - Consistencia entre entornos: estandares/consistencia-entornos.md
+    - Alineacion con objetivos de negocio: estandares/alineacion-negocio.md
+  - Proyectos: 
+    - VPC AWS: comunidad/vpc.md
+    - Cluster Patroni: comunidad/patroni.md
+    - Cluster ECS: comunidad/postgres-operator.md
+    - Implementacion Kong Gateway: comunidad/postgres-operator-2.md
+    - Java Spring Boot API REST Boilerplate: comunidad/sonarqube.md
+    - Python FastAPI API REST Boilerplate: comunidad/sonarqube.md
+    - Python PyQT6 GUI Boilerplate: comunidad/sonarqube.md
+    - Javascript NextJS Boilerplate: comunidad/sonarqube.md
 
-theme: 
-  name: material
-  logo: img/logo.png
+theme:
+  name: readthedocs
+  logo: img/picture.jpg
   favicon: img/logo.png
+  language: es
   palette:
-    # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
-    # Light Mode
+        name: Modo oscuro
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
-  locale: es
+        name: Modo claro
   features:
     - navigation.instant
     - navigation.instant.prefetch
-repo_url: https://github.com/example/repository/
 
+extra:
+  favicon: img/logo.png
