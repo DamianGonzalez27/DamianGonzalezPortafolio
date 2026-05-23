@@ -1,0 +1,1 @@
+# estandares/estrategia-testing
