@@ -7,9 +7,8 @@ nav:
     - Principios técnicos: perfil/principios-tecnicos.md
     - Estilo de liderazgo: practicas/liderazgo.md
   - Practicas de ingeniería:
-    - Toma de requerimientos: practicas/toma-requerimientos.md
-    - Definición de arquitectura: practicas/arquitectura.md
-    - Flujo de información: practicas/flujo-informacion.md
+    - Ingeniería de requerimientos: practicas/toma-requerimientos.md
+    - Definición e Ingeniería de Arquitectura: practicas/arquitectura.md
     - Planificación: practicas/planificacion.md
     - Control de calidad: practicas/control-calidad.md
     - Control de deuda tecnica: practicas/control-deuda-tecnica.md
