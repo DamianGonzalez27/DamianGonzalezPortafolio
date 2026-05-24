@@ -1,39 +1,40 @@
-# Erick Damian Gonzalez Aranda — Estrategia Tecnológica y Desarrollo de Software
+# Erick Damian Gonzalez Aranda
+Tech Lead | Cloud & Distributed Systems | AWS Architect  | Ingeniero en Sistemas computacionales | Especialista desarrollo de software
 
-Soy consultor de software y arquitecto tecnológico con foco en **construir sistemas que funcionen hoy y sigan siendo sostenibles mañana**. No vendo líneas de código: diseño, implemento y opero soluciones que resuelven problemas reales de negocio con criterio técnico, disciplina y visión de largo plazo.
+Ciudad de México, México
+Correo:ing.gonzaleza@outlook.com 
+Teléfono: 5641768718
 
-Trabajo en la intersección entre **arquitectura, DevOps, desarrollo backend y gobierno tecnológico**, ayudando a empresas y equipos a pasar del caos operativo a plataformas confiables, escalables y seguras. Mi especialidad no es una tecnología puntual, sino **tomar decisiones técnicas correctas bajo restricciones reales**: presupuesto, tiempo, equipo y crecimiento.
-
-## Qué hago (y qué no)
-
-- Diseño **arquitecturas limpias y evolutivas**, evitando el sobre–engineering tanto como la deuda técnica inconsciente.  
-- Desarrollo **software backend robusto**, orientado a servicios, eventos y automatización.
-- Implemento **infraestructura como código, CI/CD y observabilidad** como parte del producto, no como un “extra”.
-- Defino **estándares de calidad, seguridad y operación** que los equipos pueden sostener en el tiempo.
-
-No hago soluciones mágicas, no prometo escalabilidad infinita desde el día uno y no construyo castillos de PowerPoint. Prefiero sistemas simples, bien pensados y medibles.
-
-## Cómo pienso el software
-
-Creo que el buen software:
-- Se **entiende antes de escalarse**
-- Se **automatiza antes de crecer**
-- Se **observa antes de optimizarse**
-- Se **asegura desde el diseño**, no después de un incidente
-
-Mi enfoque es pragmático: cada decisión técnica debe tener una justificación clara en términos de **riesgo, costo y valor**. El objetivo no es usar la tecnología de moda, sino **resolver el problema correcto con las herramientas adecuadas**.
-
-## Mi rol con los equipos y clientes
-
-Actúo como:
-- **Arquitecto técnico** cuando hay que definir el rumbo
-- **Ingeniero hands-on** cuando hay que construir
-- **Filtro de calidad** cuando hay que profesionalizar procesos
-- **Traductor** entre negocio y tecnología cuando nadie se está entendiendo
-
-Me involucro en los proyectos como si fueran propios, porque los sistemas mal diseñados siempre cobran intereses… y alguien termina pagándolos.
+Ingeniería en Sistemas Computacionales
+Tecnológico de Estudios Superiores de Huixquilucan
 
 ---
 
-> Este portafolio no es una lista de tecnologías,  
-> es un registro de **cómo trabajo, qué principios sigo y qué tipo de sistemas construyo**.
+## Resumen Profesional
+Ingeniero en sistemas con más de 8 años de experiencia diseñando y liderando soluciones de software escalables en entornos financieros y corporativos.
+Especializado en arquitectura de sistemas distribuidos, microservicios y plataformas cloud en AWS, con experiencia liderando equipos técnicos y entregando soluciones de alta disponibilidad, seguras y orientadas a eventos.
+Capacidad comprobada para traducir requerimientos de negocio en soluciones tecnológicas robustas, escalables y listas para producción, combinando arquitectura, ejecución técnica y optimización operativa.
+
+## Áreas de especialización
+Arquitectura de Microservicios y Sistemas Distribuidos
+Arquitectura Cloud (AWS – Serverless y Contenedores)
+Sistemas Orientados a Eventos (SQS, EventBridge, APIs)
+DevOps & Platform Engineering (CI/CD, IaC, Observabilidad)
+Liderazgo Técnico y Gestión de Equipos
+Sistemas de Alta Disponibilidad y Optimización de Rendimiento
+Desarrollo Seguro (DevSecOps)
+
+## Habilidades Técnicas
+Lenguajes y Frameworks
+Java (11–21), C#, Python, JavaScript
+Spring Boot, Flask, Laravel, Next.js
+Cloud e Integración
+AWS (Lambda, ECS, API Gateway, SQS, EventBridge, CloudWatch, Route53, VPC)
+Kong Gateway, RabbitMQ
+Bases de Datos
+PostgreSQL, MySQL, Oracle (PL/SQL), MongoDB, Redis
+DevOps y Calidad
+Docker, CI/CD (GitHub Actions, Jenkins)
+SonarQube, BlackDuck, Aikido
+Infraestructura como Código (CloudFormation)
+
