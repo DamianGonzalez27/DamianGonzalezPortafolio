@@ -11,12 +11,10 @@ nav:
     - Definición e Ingeniería de Arquitectura: practicas/arquitectura.md
     - Planificación: practicas/planificacion.md
   - Estandares de calidad:
-    - Patrones de codigo: estandares/patrones-codigo.md
-    - Patrones de diseño: estandares/patrones-diseno.md
-    - Estrategia de manejo de errores: estandares/error-handler.md
-    - Estrategia de testing: estandares/estrategia-testing.md
-    - Estrategia de observabilidad: estandares/estrategias-loggeo.md
-    - Code Review: estandares/code-review.md
+    - Gobernanza de Plataforma y Caminos Seguros: estandares/patrones-codigo.md
+    - Arquitectura de Software y Patrones de Diseño: estandares/patrones-diseno.md
+    - Ciclo de Vida de Calidad Automatizada: estandares/error-handler.md
+    - Estrategias de Resiliencia Operativa: estandares/estrategia-testing.md
   - Herramientas desarrolladas:
     - Python FastAPI API REST Boilerplate: herramientas/python-fastapi-api-rest-boilerplate.md
     - Python PyQT6 GUI Boilerplate: herramientas/python-pyqt6-gui-boilerplate.md
