@@ -15,6 +15,10 @@ nav:
     - Arquitectura de Software y Patrones de Diseño: estandares/patrones-diseno.md
     - Ciclo de Vida de Calidad Automatizada: estandares/error-handler.md
     - Estrategias de Resiliencia Operativa: estandares/estrategia-testing.md
+  - Ingeniería de Plataforma y Confiabilidad:
+    - CI/CD: operacion/flujos-despliegue.md
+    - Gestión de incidentes: operacion/gestion-incidentes.md
+    - Estrategias de recuperación: operacion/estrategias-recuperacion.md
   - Herramientas desarrolladas:
     - Python FastAPI API REST Boilerplate: herramientas/python-fastapi-api-rest-boilerplate.md
     - Python PyQT6 GUI Boilerplate: herramientas/python-pyqt6-gui-boilerplate.md
@@ -22,10 +26,6 @@ nav:
     - Logger Tracker: herramientas/logger-tracker.md
     - Error Handler Tracker: herramientas/error-handler-tracker.md
     - Global Repository Tracker: herramientas/global-repository-tracker.md
-  - Operacion y plataforma:
-    - CI/CD: operacion/flujos-despliegue.md
-    - Gestión de incidentes: operacion/gestion-incidentes.md
-    - Estrategias de recuperación: operacion/estrategias-recuperacion.md
   - Proyectos: 
     - Arquitectura Hub Spoke:
       - Problemática actual: proyectos/arquitectura-hub-spoke-descripcion.md
