@@ -19,7 +19,6 @@ nav:
     - Transacctional framework: herramientas/python-pyqt6-gui-boilerplate.md
     - Async framework: herramientas/javascript-nextjs-boilerplate.md
     - Messaging platform: herramientas/rabbitmq-cluster.md
-    - Platform as code: herramientas/terraform-aws.md
   - ADRs:
     - ADR 001 Kubernetes vs ECS: 
       - Criterios de evaluacion: adr/001-criterios-evaluacion.md
