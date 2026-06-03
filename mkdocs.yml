@@ -15,10 +15,10 @@ nav:
     - Arquitectura de Software y Patrones de Diseño: estandares/patrones-diseno.md
     - Ciclo de Vida de Calidad Automatizada: estandares/error-handler.md
   - Ingenieria de plataformas:
-    - Develop Toolkit: herramientas/python-fastapi-api-rest-boilerplate.md
-    - Transacctional framework: herramientas/python-pyqt6-gui-boilerplate.md
-    - Async framework: herramientas/javascript-nextjs-boilerplate.md
-    - Messaging platform: herramientas/global-repository-tracker.md
+    - Develop Toolkit: herramientas/develop-toolkit.md
+    - Transacctional framework: herramientas/transactional-framework.md
+    - Async framework: herramientas/async-framework.md
+    - Messaging platform: herramientas/messaging-platform.md
   - ADRs:
     - ADR 001 uso de Python: 
       - Criterios de evaluacion: adr/001-criterios-evaluacion.md
