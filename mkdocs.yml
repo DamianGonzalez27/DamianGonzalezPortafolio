@@ -18,38 +18,28 @@ nav:
     - Develop Toolkit: herramientas/python-fastapi-api-rest-boilerplate.md
     - Transacctional framework: herramientas/python-pyqt6-gui-boilerplate.md
     - Async framework: herramientas/javascript-nextjs-boilerplate.md
-    - Messaging platform: herramientas/rabbitmq-cluster.md
+    - Messaging platform: herramientas/global-repository-tracker.md
   - ADRs:
-    - ADR 001 Kubernetes vs ECS: 
+    - ADR 001 uso de Python: 
       - Criterios de evaluacion: adr/001-criterios-evaluacion.md
       - Evaluación estratégica: adr/001-evaluacion-estrategica.md
       - Evaluación técnica: adr/001-evaluacion-tecnica.md
       - Evaluación económica: adr/001-evaluacion-economica.md
-    - ADR 002 AWS vs OnPremise:
+    - ADR 002 uso de FastAPI: 
       - Criterios de evaluacion: adr/002-criterios-evaluacion.md
       - Evaluación estratégica: adr/002-evaluacion-estrategica.md
       - Evaluación técnica: adr/002-evaluacion-tecnica.md
       - Evaluación económica: adr/002-evaluacion-economica.md
-    - ADR 003 Cloudwatch vs Opensearch: 
+    - ADR 003 uso de Kafka y RabbitMQ: 
       - Criterios de evaluacion: adr/003-criterios-evaluacion.md
       - Evaluación estratégica: adr/003-evaluacion-estrategica.md
       - Evaluación técnica: adr/003-evaluacion-tecnica.md
       - Evaluación económica: adr/003-evaluacion-economica.md
-    - ADR 004 KongGateway vs ApiGateway:
+    - ADR 004 por que encapsular la observabilidad en un framework: 
       - Criterios de evaluacion: adr/004-criterios-evaluacion.md
       - Evaluación estratégica: adr/004-evaluacion-estrategica.md
       - Evaluación técnica: adr/004-evaluacion-tecnica.md
-      - Evaluación económica: adr/004-evaluacion-economica.md 
-    - ADR 005 Estrategia multicuenta:
-      - Criterios de evaluacion: adr/005-criterios-evaluacion.md
-      - Evaluación estratégica: adr/005-evaluacion-estrategica.md
-      - Evaluación técnica: adr/005-evaluacion-tecnica.md
-      - Evaluación económica: adr/005-evaluacion-economica.md
-    - ADR 006 Containers vs Virtual Machines:
-      - Criterios de evaluacion: adr/006-criterios-evaluacion.md
-      - Evaluación estratégica: adr/006-evaluacion-estrategica.md
-      - Evaluación técnica: adr/006-evaluacion-tecnica.md
-      - Evaluación económica: adr/006-evaluacion-economica.md
+      - Evaluación económica: adr/004-evaluacion-economica.md
 theme:
   name: readthedocs
   logo: img/picture.jpg
