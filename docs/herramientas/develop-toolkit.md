@@ -6,8 +6,9 @@ Su integración inyecta capacidades avanzadas de grado empresarial con cero fric
 ---
 
 ## Proyecto de Plataforma: Logger Tracker (Librería PyPI)
-Enlace a Github: https://github.com/DamianGonzalez27/FrameworkObservabilidad
-Enlace a PyPi: https://pypi.org/project/logger-tracker/
+
+- [Enlace a Github](https://github.com/DamianGonzalez27/FrameworkObservabilidad)
+- [Enlace a PyPi](https://pypi.org/project/logger-tracker/)
 
 Logger Tracker es una librería de infraestructura desarrollada en Python para estandarizar la observabilidad operacional de servicios backend dentro de ecosistemas distribuidos y entornos altamente concurrentes o asíncronos. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: la inconsistencia en la generación de telemetría y la alta complejidad para correlacionar eventos durante la operación diaria de sistemas distribuidos.
 
@@ -43,8 +44,9 @@ Alineación con OpenTelemetry (OTel): Incorporación de soporte nativo para la p
 Instrumentación Automatizada para Microservicios: Desarrollo de middlewares integrados para frameworks populares de Python (FastAPI, Flask) y consumidores de eventos asíncronos para capturar e inyectar telemetría de forma transparente en las fronteras de la red.
 
 ## Proyecto de Plataforma: Global Handler (Librería PyPI)
-Enlace a GitHub: https://github.com/DamianGonzalez27/GlobalHandler
-Enlace a PyPi: https://pypi.org/project/global-handler/
+
+- [Enlace a GitHub](https://github.com/DamianGonzalez27/GlobalHandler)
+- [Enlace a PyPi](https://pypi.org/project/global-handler/)
 
 Global Handler es una librería de infraestructura desarrollada en Python para centralizar, unificar y gobernar la gestión de fallos en la frontera más externa de servicios y APIs distribuidas. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: la dispersión y heterogeneidad en el manejo de excepciones de software, lo que genera respuestas inconsistentes hacia los clientes y eleva el riesgo de seguridad operativa en entornos de producción.
 

@@ -1,6 +1,6 @@
 # Proyecto de Plataforma: Async Framework (Scaffolding Asíncrono)
 
-Enlace al proyecto: https://github.com/DamianGonzalez27/AsyncFramework
+[Enlace al proyecto](https://github.com/DamianGonzalez27/AsyncFramework)
 
 Async Framework es una arquitectura de referencia y plantilla de andamiaje (scaffolding) desarrollada en Python para estandarizar la creación de Workers, demonios de fondo y consumidores de eventos de alto rendimiento dentro de ecosistemas distribuidos. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: el acoplamiento y la degradación de rendimiento que sufren las APIs síncronas al procesar tareas pesadas o ejecuciones por lotes dentro del ciclo de vida tradicional de una solicitud HTTP.
 

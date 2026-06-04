@@ -1,6 +1,6 @@
 # Proyecto de Plataforma: Transactional Framework (Scaffolding Core)
 
-Enlace al proyecto: https://github.com/DamianGonzalez27/TransactionalServiceFramework
+[Enlace al proyecto](https://github.com/DamianGonzalez27/TransactionalServiceFramework)
 
 Transactional Framework es una arquitectura de referencia y plantilla de andamiaje (scaffolding) desarrollada en Python para estandarizar la creación de servicios y APIs síncronas de alta confiabilidad dentro de entornos corporativos. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: la fragmentación arquitectónica en el código base de los microservicios y la alta carga cognitiva que experimentan los desarrolladores al tener que configurar manualmente la infraestructura, la persistencia y la telemetría en cada nuevo proyecto.
 

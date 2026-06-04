@@ -1,6 +1,6 @@
 # Cimiento de Comunicación: Messaging Platform
 
-Enlace al proyecto: https://github.com/DamianGonzalez27/MessagingCluster
+[Enlace al proyecto](https://github.com/DamianGonzalez27/MessagingCluster)
 
 Messaging Platform es una solución de infraestructura y topología de red distribuida, empaquetada como Infraestructura como Código (IaC), desarrollada para proveer un entorno híbrido de mensajería y transmisión de eventos de alta disponibilidad. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: el acoplamiento directo y síncrono entre microservicios, lo que genera sistemas rígidos frente a fallos de red, cuellos de botella en bases de datos y una alta complejidad operativa para escalar componentes de manera independiente.
 
