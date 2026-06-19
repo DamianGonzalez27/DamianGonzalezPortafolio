@@ -19,27 +19,6 @@ nav:
     - Transacctional framework: herramientas/transactional-framework.md
     - Async framework: herramientas/async-framework.md
     - Messaging platform: herramientas/messaging-platform.md
-  - ADRs:
-    - ADR 001 uso de Python: 
-      - Criterios de evaluacion: adr/001-criterios-evaluacion.md
-      - Evaluación estratégica: adr/001-evaluacion-estrategica.md
-      - Evaluación técnica: adr/001-evaluacion-tecnica.md
-      - Evaluación económica: adr/001-evaluacion-economica.md
-    - ADR 002 uso de FastAPI: 
-      - Criterios de evaluacion: adr/002-criterios-evaluacion.md
-      - Evaluación estratégica: adr/002-evaluacion-estrategica.md
-      - Evaluación técnica: adr/002-evaluacion-tecnica.md
-      - Evaluación económica: adr/002-evaluacion-economica.md
-    - ADR 003 uso de Kafka y RabbitMQ: 
-      - Criterios de evaluacion: adr/003-criterios-evaluacion.md
-      - Evaluación estratégica: adr/003-evaluacion-estrategica.md
-      - Evaluación técnica: adr/003-evaluacion-tecnica.md
-      - Evaluación económica: adr/003-evaluacion-economica.md
-    - ADR 004 por que encapsular la observabilidad en un framework: 
-      - Criterios de evaluacion: adr/004-criterios-evaluacion.md
-      - Evaluación estratégica: adr/004-evaluacion-estrategica.md
-      - Evaluación técnica: adr/004-evaluacion-tecnica.md
-      - Evaluación económica: adr/004-evaluacion-economica.md
 theme:
   name: readthedocs
   logo: img/picture.jpg
