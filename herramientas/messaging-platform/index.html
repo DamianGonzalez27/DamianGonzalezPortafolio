@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Messaging platform - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Messaging platform";
+        var mkdocs_page_input_path = "herramientas/messaging-platform.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/principios-tecnicos/">Principios técnicos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/toma-requerimientos/">Ingeniería de requerimientos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/arquitectura/">Definición e Ingeniería de Arquitectura</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/error-handler/">Ciclo de Vida de Calidad Automatizada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../transactional-framework/">Transacctional framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Messaging platform</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#el-problema-de-negocio-y-operacion">El Problema de Negocio y Operación</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#la-solucion-de-ingenieria">La Solución de Ingeniería</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#capacidades-principales-del-componente">Capacidades Principales del Componente</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filosofia-de-diseno-y-golden-paths">Filosofía de Diseño y "Golden Paths"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#roadmap-y-evolucion-tecnica">Roadmap y Evolución Técnica</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Ingenieria de plataformas</li>
+      <li class="breadcrumb-item active">Messaging platform</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cimiento-de-comunicacion-messaging-platform">Cimiento de Comunicación: Messaging Platform</h1>
+<p><a href="https://github.com/DamianGonzalez27/MessagingCluster">Enlace al proyecto</a></p>
+<p>Messaging Platform es una solución de infraestructura y topología de red distribuida, empaquetada como Infraestructura como Código (IaC), desarrollada para proveer un entorno híbrido de mensajería y transmisión de eventos de alta disponibilidad. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: el acoplamiento directo y síncrono entre microservicios, lo que genera sistemas rígidos frente a fallos de red, cuellos de botella en bases de datos y una alta complejidad operativa para escalar componentes de manera independiente.</p>
+<p>En lugar de permitir que cada servicio web implemente configuraciones locales de mensajería o adopte de forma ciega una única herramienta para resolver problemas de distinta naturaleza, concebí este proyecto como un cimiento perimetral de comunicación de autoservicio. Su objetivo principal es abstraer el aprovisionamiento de los esquemas de red y persistencia distribuidos, aislando el tráfico de eventos dentro de una cuenta satélite dedicada (Spoke Account) para minimizar radicalmente el radio de impacto (blast radius) de la organización.</p>
+<h2 id="el-problema-de-negocio-y-operacion">El Problema de Negocio y Operación</h2>
+<p>Cuando los servicios de una organización dependen de llamadas síncronas HTTP mutuas para completar una transacción, la caída de un solo componente secundario provoca un colapso en cadena de toda la plataforma (Efecto Dominó). Asimismo, intentar forzar una sola tecnología de mensajería para resolver tanto la entrega de tareas transaccionales exactas como la ingesta masiva de telemetría a alta velocidad eleva los costos operativos, genera pérdida de mensajes y satura la capacidad de cómputo del sistema.</p>
+<h2 id="la-solucion-de-ingenieria">La Solución de Ingeniería</h2>
+<p>Messaging Platform resuelve esta fricción mediante el aprovisionamiento orquestado de un ecosistema híbrido y sinérgico que combina las ventajas de un Message Broker tradicional con un Distributed Commit Log. Al empaquetar esta topología mediante arquitecturas de contenedores y volúmenes aislados, la plataforma habilita de forma nativa el desacoplamiento temporal, sistemas de comunicación coreográficos y pipelines de datos resilientes, listos para ser consumidos por las APIs síncronas y los componentes del Async Framework.</p>
+<h2 id="capacidades-principales-del-componente">Capacidades Principales del Componente</h2>
+<p>Diseñada bajo principios de segregación estricta de casos de uso, alta persistencia y seguridad perimetral, la plataforma provee de forma nativa:</p>
+<p>Coexistencia Híbrida Inteligente: Integración dirigida de RabbitMQ para mensajería transaccional de alta fidelidad (enrutamientos complejos y garantías de entrega mediante AMQP) junto con Apache Kafka para streaming masivo de eventos e ingesta inmutable a ultra-baja latencia.</p>
+<p>Modernización Operativa mediante Kafka KRaft: Configuración avanzada que elimina por completo la dependencia externa de Zookeeper para la gestión de metadatos de Kafka, consolidando el gobierno del clúster de forma nativa en los brokers para acelerar los tiempos de recuperación ante fallos de nodos.</p>
+<p>Garantía de Persistencia e Inmutabilidad de Datos: Implementación de políticas de almacenamiento mediante volúmenes nombrados independientes (Named Volumes), asegurando la continuidad de los estados del clúster y las colas de mensajes ante reinicios o actualizaciones de la infraestructura.</p>
+<p>Seguridad Perimetral y Principio de Mínimo Privilegio: Mitigación automatizada de riesgos de acceso mediante la parametrización dinámica de credenciales administrativas y el aislamiento estricto de redes virtuales (Docker Networks), impidiendo la exposición innecesaria de los puertos de datos hacia zonas públicas de la red.</p>
+<h2 id="filosofia-de-diseno-y-golden-paths">Filosofía de Diseño y "Golden Paths"</h2>
+<p>Concibo Messaging Platform como la infraestructura neurálgica que transforma un conjunto de microservicios aislados en un verdadero ecosistema distribuido y resiliente. Su diseño materializa mi filosofía de ingeniería: la infraestructura debe ser tratada como un producto consumible que reduzca la fricción técnica de los equipos de desarrollo. Al proveer este "Camino Seguro" (Golden Path) empaquetado y listo para producción, las células de software pueden implementar patrones asíncronos complejos o arquitecturas orientadas a eventos (EDA) de forma inmediata, sabiendo que la red subyacente ya cuenta con los estándares corporativos de alta disponibilidad, persistencia de datos y seguridad exigidos por el negocio.</p>
+<h2 id="roadmap-y-evolucion-tecnica">Roadmap y Evolución Técnica</h2>
+<p>El proyecto ha sido estructurado para transicionar hacia una plataforma de mensajería distribuida totalmente elástica y automatizada en la nube a través de los siguientes hitos técnicos:</p>
+<p>Migración Hacia Declaraciones Terraform / CloudFormation: Evolución del empaquetamiento actual basado en Docker Compose hacia manifiestos de Infraestructura como Código (IaC) empresariales para el aprovisionamiento automatizado del clúster sobre servicios nativos de AWS (como Amazon MSK y Amazon MQ).</p>
+<p>Monitoreo y Observabilidad de Clúster Integrada: Incorporación de agentes de telemetría dedicados (como Prometheus Exporters) para capturar en tiempo real métricas críticas de infraestructura, incluyendo tasas de entrada/salida de mensajes, lag de los consumidores y saturación de disco.</p>
+<p>Automatización de Tópicos y Esquemas mediante GitOps: Desarrollo de pipelines que permitan a los desarrolladores declarar nuevos tópicos de Kafka o colas de RabbitMQ directamente mediante archivos de configuración en sus repositorios de código, automatizando su creación y gobernanza en el clúster sin intervención manual del equipo de operaciones.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../async-framework/" class="btn btn-neutral float-left" title="Async framework"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../async-framework/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

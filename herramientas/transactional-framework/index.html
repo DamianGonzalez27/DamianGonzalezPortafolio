@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Transacctional framework - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Transacctional framework";
+        var mkdocs_page_input_path = "herramientas/transactional-framework.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/principios-tecnicos/">Principios técnicos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/toma-requerimientos/">Ingeniería de requerimientos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/arquitectura/">Definición e Ingeniería de Arquitectura</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/error-handler/">Ciclo de Vida de Calidad Automatizada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Transacctional framework</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#el-problema-de-negocio-y-operacion">El Problema de Negocio y Operación</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#la-solucion-de-ingenieria">La Solución de Ingeniería</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#capacidades-principales-del-componente">Capacidades Principales del Componente</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filosofia-de-diseno-y-golden-paths">Filosofía de Diseño y "Golden Paths"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#roadmap-y-evolucion-tecnica">Roadmap y Evolución Técnica</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../messaging-platform/">Messaging platform</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Ingenieria de plataformas</li>
+      <li class="breadcrumb-item active">Transacctional framework</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="proyecto-de-plataforma-transactional-framework-scaffolding-core">Proyecto de Plataforma: Transactional Framework (Scaffolding Core)</h1>
+<p><a href="https://github.com/DamianGonzalez27/TransactionalServiceFramework">Enlace al proyecto</a></p>
+<p>Transactional Framework es una arquitectura de referencia y plantilla de andamiaje (scaffolding) desarrollada en Python para estandarizar la creación de servicios y APIs síncronas de alta confiabilidad dentro de entornos corporativos. El proyecto surge como respuesta a un desafío crítico en plataformas modernas: la fragmentación arquitectónica en el código base de los microservicios y la alta carga cognitiva que experimentan los desarrolladores al tener que configurar manualmente la infraestructura, la persistencia y la telemetría en cada nuevo proyecto.</p>
+<p>En lugar de permitir que cada célula de ingeniería improvise la estructura de sus servicios, concebí esta herramienta como una base sólida de gobernanza arquitectónica reutilizable. Su objetivo principal es empaquetar de forma nativa los componentes core de nuestro Develop Toolkit (logger-tracker y global-handler), asegurando que cualquier nueva API nazca con estándares de grado de producción desde el primer día y con cero fricción de configuración.</p>
+<h2 id="el-problema-de-negocio-y-operacion">El Problema de Negocio y Operación</h2>
+<p>Cuando los equipos de desarrollo carecen de un estándar base, el código de negocio se acopla agresivamente a herramientas tecnológicas volátiles (frameworks web, ORMs, bases de datos). Ante cambios requeridos por el negocio o actualizaciones de infraestructura, los sistemas se vuelven rígidos, difíciles de mantener y propensos a la introducción de deuda técnica, ralentizando exponencialmente el time-to-market de la organización y elevando los costos de mantenimiento.</p>
+<h2 id="la-solucion-de-ingenieria">La Solución de Ingeniería</h2>
+<p>Transactional Framework resuelve esta fricción mediante el aislamiento radical de las reglas de negocio a través de la implementación de patrones de diseño limpios y desacoplados. Al centralizar el cableado de infraestructura (inyección de dependencias, sesiones de bases de datos, formateadores de red) en las fronteras del sistema, el framework permite que el núcleo transaccional permanezca inmutable, altamente testable y completamente agnóstico a las herramientas tecnológicas externas que lo rodean.</p>
+<h2 id="capacidades-principales-del-componente">Capacidades Principales del Componente</h2>
+<p>Diseñada bajo principios de modularidad estricta, alta cohesión y optimización de la experiencia de desarrollo, la plantilla provee de forma nativa:</p>
+<p>Alineación con Arquitectura Hexagonal y DDD: Separación estricta del código en capas independientes (Dominio, Aplicación e Infraestructura), garantizando que las reglas core del negocio solo interactúen con abstracciones (Puertos) y no con tecnologías concretas (Adaptadores).</p>
+<p>Inyección de Dependencias Automatizada: Configuración centralizada de servicios y clientes de persistencia en el arranque del sistema, minimizando el acoplamiento y permitiendo la sustitución o simulación (mocking) de componentes con mínimo esfuerzo en pruebas unitarias.</p>
+<p>Instrumentación de Telemetría Nativa: Integración out-of-the-box de capacidades avanzadas de rastreo contextual y auditoría, asegurando que cada endpoint expuesto herede de forma automática el flujo de Correlation IDs de la organización.</p>
+<p>Estrategia de Despliegue Inmutable: Empaquetamiento basado en contenedores Docker y configuraciones optimizadas para entornos en la nube, facilitando pipelines de Integración y Despliegue Continuo (CI/CD) predecibles y repetibles.</p>
+<h2 id="filosofia-de-diseno-y-golden-paths">Filosofía de Diseño y "Golden Paths"</h2>
+<p>Concibo Transactional Framework como un activo estratégico de Ingeniería de Plataforma orientado a potenciar la Experiencia del Desarrollador (DevEx) y habilitar una escalabilidad pragmática. Su diseño materializa mi filosofía de ingeniería: anteponer el concepto de Monolito Modular sobre la fragmentación prematura de microservicios. Al proveer un "Camino Seguro" (Golden Path), los ingenieros pueden modularizar quirúrgicamente los contextos de negocio dentro de un repositorio unificado y escalable en red, postergando la complejidad de las redes distribuidas hasta que la madurez del producto y el volumen de transacciones realmente lo justifiquen.</p>
+<h2 id="roadmap-y-evolucion-tecnica">Roadmap y Evolución Técnica</h2>
+<p>El proyecto ha sido estructurado para evolucionar hacia una plataforma de andamiaje multi-entorno y altamente automatizada de manera progresiva a través de los siguientes hitos técnicos:</p>
+<p>Generación Automática de Andamiaje (CLI Tooling): Desarrollo de una interfaz de línea de comandos (CLI) basada en herramientas como Cookiecutter para permitir a los ingenieros instanciar nuevos servicios transaccionales en segundos bajo el estándar corporativo.</p>
+<p>Soporte Nativo Multi-Base de Datos: Incorporación de adaptadores y abstracciones preconfiguradas para coexistencia inteligente de persistencia relacional (SQLAlchemy) y no relacional (Document-driven/Key-Value) según el caso de uso.</p>
+<p>Validación Automática de Contratos (OpenAPI Integration): Automatización de pipelines que verifiquen estáticamente la fidelidad de los contratos e interfaces de las APIs frente a los esquemas de documentación viva, previniendo rupturas en el consumo de los clientes web y móviles.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../develop-toolkit/" class="btn btn-neutral float-left" title="Develop Toolkit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../async-framework/" class="btn btn-neutral float-right" title="Async framework">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../develop-toolkit/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../async-framework/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

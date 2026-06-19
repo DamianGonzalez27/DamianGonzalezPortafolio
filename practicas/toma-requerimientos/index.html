@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Ingeniería de requerimientos - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ingenier\u00eda de requerimientos";
+        var mkdocs_page_input_path = "practicas/toma-requerimientos.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/principios-tecnicos/">Principios técnicos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Ingeniería de requerimientos</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-mapeo-de-involucrados-y-matriz-de-interes">1. Mapeo de Involucrados y Matriz de Interés</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-modelado-y-delimitacion-de-dominios">2. Modelado y Delimitación de Dominios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-taxonomia-y-clasificacion-de-la-informacion">3. Taxonomía y Clasificación de la Información</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-auditoria-del-ecosistema-tecnologico-existente">4. Auditoría del Ecosistema Tecnológico Existente</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-modelado-de-procesos-y-dependencias-criticas">5. Modelado de Procesos y Dependencias Críticas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-evaluacion-de-riesgos-y-brechas-de-control">6. Evaluación de Riesgos y Brechas de Control</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../arquitectura/">Definición e Ingeniería de Arquitectura</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/error-handler/">Ciclo de Vida de Calidad Automatizada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/transactional-framework/">Transacctional framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/messaging-platform/">Messaging platform</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Practicas de ingeniería</li>
+      <li class="breadcrumb-item active">Ingeniería de requerimientos</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ingenieria-de-requerimientos-sistemicos">Ingeniería de Requerimientos Sistémicos</h1>
+<p>Entiendo el levantamiento de requerimientos como la fase más crítica del ciclo de vida del software. La mayoría de los problemas tecnológicos no nacen del código, sino de una comprensión incompleta del contexto operativo, organizacional y de negocio donde el sistema debe funcionar.</p>
+<p>Por ello, no me limito a recopilar necesidades técnicas aisladas. Ejecuto un proceso de descubrimiento estructurado y sistémico orientado a reducir la incertidumbre, identificar riesgos tempranos y alinear la arquitectura tecnológica con las restricciones operativas, financieras, regulatorias y humanas de la organización. Mi objetivo es construir el contexto necesario para tomar decisiones arquitectónicas sostenibles.</p>
+<p>Para garantizar predictibilidad, trazabilidad y repetibilidad, utilizo un conjunto de formatos, plantillas y diagramas estándar que he desarrollado y perfeccionado a lo largo de mi trayectoria. Este framework de análisis se compone de diez fases estratégicas:</p>
+<h2 id="1-mapeo-de-involucrados-y-matriz-de-interes">1. Mapeo de Involucrados y Matriz de Interés</h2>
+<p>Identifico y clasifico a todos los actores clave del ecosistema: negocio, operaciones, seguridad, infraestructura, cumplimiento, soporte y usuarios finales. A través de artefactos estandarizados defino:</p>
+<ul>
+<li>Niveles de influencia y expectativas del negocio.</li>
+<li>Dependencias interdepartamentales y canales de comunicación.</li>
+<li>Responsabilidades operativas futuras.</li>
+</ul>
+<p>Este análisis alinea la toma de decisiones técnicas con las necesidades reales de la organización y reduce fricciones entre áreas.</p>
+<h2 id="2-modelado-y-delimitacion-de-dominios">2. Modelado y Delimitación de Dominios</h2>
+<p>Aplico principios de diseño guiado por el dominio (Domain-Driven Design) para descomponer problemas complejos en subdominios claramente acotados. Defino bounded contexts y responsabilidades funcionales con el objetivo de:</p>
+<ul>
+<li>Evitar el acoplamiento innecesario entre componentes.</li>
+<li>Facilitar la escalabilidad organizacional y la mantenibilidad del código.</li>
+<li>Permitir la evolución e iteración independiente de los equipos.</li>
+</ul>
+<p>Busco que la arquitectura de software refleje fielmente la operación real del negocio.</p>
+<h2 id="3-taxonomia-y-clasificacion-de-la-informacion">3. Taxonomía y Clasificación de la Información</h2>
+<p>Analizo la naturaleza de los datos que el sistema procesará, almacenará e intercambiará. Clasifico la información considerando variables críticas:</p>
+<ul>
+<li>Atributos del dato: Criticidad, sensibilidad, volumen, frecuencia, persistencia y trazabilidad.</li>
+<li>Impacto arquitectónico: Requisitos regulatorios de gobierno de datos, estrategias de almacenamiento, políticas de retención, seguridad, integración y observabilidad.</li>
+</ul>
+<h2 id="4-auditoria-del-ecosistema-tecnologico-existente">4. Auditoría del Ecosistema Tecnológico Existente</h2>
+<p>Evalúo las plataformas, infraestructura, integraciones, capacidades cloud y herramientas actuales de la organización para:</p>
+<ul>
+<li>Identificar capacidades reutilizables y evitar la duplicidad tecnológica.</li>
+<li>Detectar y mapear la deuda técnica preexistente.</li>
+<li>Comprender las restricciones operativas y asegurar la compatibilidad evolutiva.</li>
+</ul>
+<p>Una arquitectura madura no ignora el legado de la organización; evoluciona sobre él de forma controlada y pragmática.</p>
+<h2 id="5-modelado-de-procesos-y-dependencias-criticas">5. Modelado de Procesos y Dependencias Críticas</h2>
+<p>Diagramo los flujos operativos y de información de extremo a extremo (end-to-end), localizando con precisión:</p>
+<ul>
+<li>Dependencias críticas y puntos únicos de falla (SPOFs). </li>
+<li>Cuellos de botella y flujos síncronos altamente sensibles.</li>
+<li>Riesgos de propagación de fallos en cascada.</li>
+</ul>
+<p>Este análisis permite diseñar arquitecturas desacopladas, resilientes y observables desde la fase de concepción.</p>
+<h2 id="6-evaluacion-de-riesgos-y-brechas-de-control">6. Evaluación de Riesgos y Brechas de Control</h2>
+<p>Realizo un análisis preventivo de riesgos técnicos, operativos y de seguridad asociados a la solución propuesta, identificando:</p>
+<ul>
+<li>Vulnerabilidades, brechas de control y riesgos de disponibilidad o escalabilidad.</li>
+<li>Estrategias nativas de mitigación, resiliencia, recuperación ante desastres y seguridad operativa.</li>
+</ul>
+<p>La gestión del riesgo es un componente fundamental del diseño arquitectónico, nunca una actividad posterior.</p>
+<h1 id="7-contexto-normativo-y-de-cumplimiento-compliance">7. Contexto Normativo y de Cumplimiento (Compliance)</h1>
+<p>Evalúo las regulaciones sectoriales, políticas internas y restricciones legales que impactan la solución. Traduzco los requerimientos normativos en capacidades técnicas concretas:</p>
+<ul>
+<li>Mecanismos de auditoría, trazabilidad y protección de datos.</li>
+<li>Segregación de responsabilidades (SoD) y retención segura de la información.</li>
+</ul>
+<p>Este enfoque asegura la viabilidad de la solución en entornos corporativos altamente regulados.</p>
+<h2 id="8-viabilidad-operativa-y-madurez-tecnica">8. Viabilidad Operativa y Madurez Técnica</h2>
+<p>Analizo la capacidad operativa real de los equipos que heredarán el sistema, evaluando su experiencia técnica, esquemas de ownership, madurez DevOps y flujos de respuesta ante incidentes.</p>
+<p>Evito diseñar soluciones cuya complejidad técnica exceda la capacidad sostenible de operación del equipo. Una arquitectura técnicamente avanzada pero imposible de operar en el día a día sigue siendo una mala arquitectura.</p>
+<h2 id="9-deteccion-de-areas-de-oportunidad-estrategicas">9. Detección de Áreas de Oportunidad Estratégicas</h2>
+<p>El proceso de descubrimiento no solo busca resolver la necesidad inicial, sino optimizar el entorno. Analizo el ecosistema completo para proponer mejoras en:</p>
+<ul>
+<li>Automatización de procesos y optimización de costos de infraestructura.</li>
+<li>Modernización tecnológica, incremento de la observabilidad y simplificación organizacional.</li>
+</ul>
+<h2 id="10-priorizacion-estrategica-y-roadmap-evolutivo">10. Priorización Estratégica y Roadmap Evolutivo</h2>
+<p>Transformo los hallazgos obtenidos en iniciativas priorizadas con base en su impacto, riesgo, complejidad técnica, costo operativo y retorno esperado.</p>
+<p>Defino hojas de ruta (roadmaps) evolutivas que permitan entregar valor de forma incremental y predecible, asumiendo la arquitectura como un proceso guiado por trade-offs conscientes y transparentes.</p>
+<p>Filosofía Operativa: Este proceso existe para reducir la incertidumbre antes de construir. Las mejores decisiones técnicas no nacen únicamente del conocimiento tecnológico puro, sino de la comprensión profunda del contexto humano, operativo y organizacional donde el sistema debe evolucionar. Priorizo soluciones sostenibles diseñadas para resolver los desafíos actuales, preservando siempre la capacidad futura de adaptación de la organización.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../liderazgo/" class="btn btn-neutral float-left" title="Estilo de liderazgo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../arquitectura/" class="btn btn-neutral float-right" title="Definición e Ingeniería de Arquitectura">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../liderazgo/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../arquitectura/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

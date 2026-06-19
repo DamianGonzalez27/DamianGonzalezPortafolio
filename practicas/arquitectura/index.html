@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Definición e Ingeniería de Arquitectura - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Definici\u00f3n e Ingenier\u00eda de Arquitectura";
+        var mkdocs_page_input_path = "practicas/arquitectura.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/principios-tecnicos/">Principios técnicos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../toma-requerimientos/">Ingeniería de requerimientos</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Definición e Ingeniería de Arquitectura</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-modelado-visual-de-la-solucion-modelo-c4">1. Modelado Visual de la Solución (Modelo C4)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-modelado-dinamico-y-flujos-operativos">2. Modelado Dinámico y Flujos Operativos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-modelado-de-casos-de-uso-y-dinamica-operativa">3. Modelado de Casos de Uso y Dinámica Operativa</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-especificacion-funcional-y-diseno-de-interfaces">4. Especificación Funcional y Diseño de Interfaces</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-ingenieria-de-requerimientos-no-funcionales-nfrs">5. Ingeniería de Requerimientos No Funcionales (NFRs)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-arquitectura-de-seguridad-transversal-shift-left">6. Arquitectura de Seguridad Transversal (Shift-Left)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-gobierno-de-decisiones-y-registro-de-trade-offs-adrs">7. Gobierno de Decisiones y Registro de Trade-offs (ADRs)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-estrategia-de-transicion-y-evolucion-incremental">8. Estrategia de Transición y Evolución Incremental</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/error-handler/">Ciclo de Vida de Calidad Automatizada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/transactional-framework/">Transacctional framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/messaging-platform/">Messaging platform</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Practicas de ingeniería</li>
+      <li class="breadcrumb-item active">Definición e Ingeniería de Arquitectura</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="definicion-e-ingenieria-de-arquitectura">Definición e Ingeniería de Arquitectura</h1>
+<p>La definición de arquitectura representa el punto de convergencia entre las necesidades del negocio, las restricciones operativas y la viabilidad técnica de la organización. Mi enfoque parte de los resultados obtenidos durante el proceso de Discovery para diseñar soluciones sostenibles, resilientes y evolutivas, alineadas tanto a los objetivos estratégicos como a la capacidad operativa real de las plataformas y los equipos.</p>
+<p>Inspirado en marcos de arquitectura empresarial como TOGAF, abordo cada solución desde cinco dimensiones interdependientes: Negocio, Datos, Aplicaciones, Tecnología y Seguridad. Concibo la arquitectura no como un entregable estático, sino como un sistema vivo de decisiones técnicas orientadas a facilitar la evolución continua del ecosistema tecnológico.</p>
+<p>Para garantizar consistencia, trazabilidad y repetibilidad, gobierno este proceso mediante un conjunto de artefactos, modelos y plantillas estándar desarrollados y refinados a lo largo de mi trayectoria profesional:</p>
+<h2 id="1-modelado-visual-de-la-solucion-modelo-c4">1. Modelado Visual de la Solución (Modelo C4)</h2>
+<p>Represento la estructura técnica propuesta mediante el Modelo C4, permitiendo una visualización multinivel que abarca desde el contexto general del negocio hasta el detalle de componentes, integraciones e infraestructura. A través de estos diagramas mapeo:</p>
+<ul>
+<li>Límites de contexto, dependencias entre sistemas e integraciones externas.</li>
+<li>Topologías por ambiente y requerimientos de infraestructura cloud o local.</li>
+<li>Controles operativos y perímetros de seguridad de la red.</li>
+</ul>
+<p>El objetivo es generar una abstracción clara y compartida que permita alinear tanto a equipos técnicos como a stakeholders estratégicos.</p>
+<h2 id="2-modelado-dinamico-y-flujos-operativos">2. Modelado Dinámico y Flujos Operativos</h2>
+<p>Complemento la arquitectura estática mediante diagramas de secuencia, flujos transaccionales y el modelado dinámico de la interacción entre servicios, procesos y actores del sistema. Este análisis me permite:</p>
+<ul>
+<li>Visualizar el comportamiento real de la solución en tiempo real.</li>
+<li>Identificar dependencias críticas, cuellos de botella y puntos únicos de falla (SPOFs).</li>
+<li>Definar puntos de instrumentación, logging estructurado, monitoreo y estrategias de observabilidad distribuida.</li>
+<li>Validar los mecanismos de desacoplamiento y la tolerancia a fallos ante escenarios de degradación.</li>
+</ul>
+<h2 id="3-modelado-de-casos-de-uso-y-dinamica-operativa">3. Modelado de Casos de Uso y Dinámica Operativa</h2>
+<p>Traduzco la arquitectura en escenarios operativos reales e historias de usuario técnicas para validar que las capacidades del sistema respondan adecuadamente a los flujos del negocio y a las necesidades del entorno. Este proceso facilita:</p>
+<ul>
+<li>Validar las expectativas funcionales frente a las restricciones técnicas reales.</li>
+<li>Entender los impactos operativos en el día a día de los equipos e identificar riesgos tempranos.</li>
+<li>Reducir la ambigüedad conceptual durante la fase de implementación.</li>
+</ul>
+<h2 id="4-especificacion-funcional-y-diseno-de-interfaces">4. Especificación Funcional y Diseño de Interfaces</h2>
+<p>Documento con precisión los criterios funcionales y contratos técnicos que definen el comportamiento operativo de la solución para garantizar la alineación entre arquitectura, desarrollo y operación. Esto incluye:</p>
+<ul>
+<li>Contratos de APIs, estructuras de datos y mecanismos de validación.</li>
+<li>Estrategias de persistencia, integraciones entre servicios, formatos de intercambio de información y consistencia transaccional.</li>
+</ul>
+<h2 id="5-ingenieria-de-requerimientos-no-funcionales-nfrs">5. Ingeniería de Requerimientos No Funcionales (NFRs)</h2>
+<p>Trato los atributos de calidad como elementos estructurales de la arquitectura y no como optimizaciones posteriores. Defino límites técnicos y métricas relacionadas con:</p>
+<ul>
+<li>Rendimiento y Escalabilidad: Tiempos de respuesta, concurrencia y elasticidad.</li>
+<li>Resiliencia: Disponibilidad, mecanismos de recuperación ante fallos y alta disponibilidad.</li>
+<li>Gobernanza: Observabilidad nativa, capacidades de auditoría y cumplimiento normativo.</li>
+</ul>
+<h2 id="6-arquitectura-de-seguridad-transversal-shift-left">6. Arquitectura de Seguridad Transversal (Shift-Left)</h2>
+<p>Incorporo controles de seguridad desde las etapas iniciales del diseño para reducir de manera proactiva la superficie de ataque y fortalecer la resiliencia operativa del ecosistema. La especificación contempla:</p>
+<ul>
+<li>Modelos de autenticación, autorización y controles de identidad (IAM).</li>
+<li>Cifrado de información (en tránsito y en reposo) y segmentación de redes.</li>
+<li>Protección nativa de APIs, trazabilidad, auditoría y cumplimiento de políticas corporativas.</li>
+</ul>
+<h2 id="7-gobierno-de-decisiones-y-registro-de-trade-offs-adrs">7. Gobierno de Decisiones y Registro de Trade-offs (ADRs)</h2>
+<p>Entiendo que la ingeniería madura consiste en gestionar compromisos conscientes. Por ello, documento las decisiones arquitectónicas relevantes mediante registros estructurados (Architectural Decision Records - ADRs), evaluando críticamente:</p>
+<ul>
+<li>Complejidad operativa, costo de infraestructura y mantenibilidad a largo plazo.</li>
+<li>Impacto organizacional, madurez tecnológica de las herramientas y curva de aprendizaje del equipo.</li>
+<li>Favorezco soluciones pragmáticas, evolutivas y sostenibles antes que arquitecturas artificialmente sofisticadas o impulsadas por tendencias pasajeras.</li>
+</ul>
+<h2 id="8-estrategia-de-transicion-y-evolucion-incremental">8. Estrategia de Transición y Evolución Incremental</h2>
+<p>Diseño plataformas preparadas para transformarse de manera controlada sin interrumpir la operación del negocio. Defino planes de migración y evolución del ecosistema orientados a:</p>
+<ul>
+<li>El desacoplamiento progresivo de componentes legados mediante patrones arquitectónicos (ej. Strangler Fig Pattern).</li>
+<li>La modernización gradual de infraestructura y la reducción sistemática de la deuda técnica.</li>
+<li>Garantizar la continuidad operativa y la capacidad adaptativa del entorno durante las ventanas de cambio.</li>
+</ul>
+<p>Filosofía de Entrega: Mi objetivo no es únicamente resolver el problema inmediato, sino preservar la capacidad futura de evolución tanto de la organización como de los equipos que operan la plataforma. Una arquitectura exitosa es aquella que permite al negocio cambiar de rumbo de manera segura, rápida y predecible.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../toma-requerimientos/" class="btn btn-neutral float-left" title="Ingeniería de requerimientos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../planificacion/" class="btn btn-neutral float-right" title="Planificación">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../toma-requerimientos/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../planificacion/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

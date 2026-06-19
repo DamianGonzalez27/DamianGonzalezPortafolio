@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Principios técnicos - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Principios t\u00e9cnicos";
+        var mkdocs_page_input_path = "perfil/principios-tecnicos.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Principios técnicos</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-comprension-del-problema-antes-de-la-solucion">1. Comprensión del Problema antes de la Solución</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-diseno-intencional-para-una-velocidad-sostenible">2. Diseño Intencional para una Velocidad Sostenible</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-simplicidad-arquitectonica-por-principio-kiss">3. Simplicidad Arquitectónica por Principio (KISS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-calidad-basada-en-la-confianza-operativa">4. Calidad Basada en la Confianza Operativa</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-decisiones-fundamentadas-en-el-contexto-real">5. Decisiones Fundamentadas en el Contexto Real</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-observabilidad-y-operabilidad-desde-la-base">6. Observabilidad y Operabilidad desde la Base</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-habilitacion-de-equipos-y-autonomia-organizacional">7. Habilitación de Equipos y Autonomía Organizacional</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-gestion-de-compensaciones-como-eje-tecnico-trade-offs">8. Gestión de Compensaciones como Eje Técnico (Trade-offs)</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/toma-requerimientos/">Ingeniería de requerimientos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/arquitectura/">Definición e Ingeniería de Arquitectura</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estandares/error-handler/">Ciclo de Vida de Calidad Automatizada</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/transactional-framework/">Transacctional framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/messaging-platform/">Messaging platform</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Perfil profesional</li>
+      <li class="breadcrumb-item active">Principios técnicos</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="los-principios-tecnicos-con-los-que-me-fundamento">Los principios técnicos con los que me fundamento</h1>
+<h2 id="1-comprension-del-problema-antes-de-la-solucion">1. Comprensión del Problema antes de la Solución</h2>
+<p>No ejecuto sin claridad. Dedico el tiempo necesario a comprender el contexto del negocio, las restricciones operativas y el problema real antes de proponer código o arquitectura. Reducir la incertidumbre al inicio es la forma más efectiva de mitigar riesgos, evitar el retrabajo y tomar decisiones técnicas acertadas. Una solución técnicamente perfecta, pero desconectada de la realidad operativa, sigue siendo una mala solución.</p>
+<h2 id="2-diseno-intencional-para-una-velocidad-sostenible">2. Diseño Intencional para una Velocidad Sostenible</h2>
+<p>La velocidad real no consiste en entregar rápido una vez, sino en mantener un ritmo constante a largo plazo. Prefiero validar hipótesis, diseñar de forma pragmática y construir bases sólidas antes que acelerar mediante la improvisación. Un ecosistema saludable permite que los equipos entreguen valor continuamente sin quedar atrapados por deuda técnica asfixiante.</p>
+<h2 id="3-simplicidad-arquitectonica-por-principio-kiss">3. Simplicidad Arquitectónica por Principio (KISS)</h2>
+<p>La complejidad innecesaria es la mayor fuente de fragilidad técnica. Busco la solución más simple capaz de resolver el desafío actual sin comprometer la capacidad futura de adaptación. Un sistema limpio es más fácil de entender, monitorear y transferir entre equipos. La madurez de un ingeniero se demuestra en su capacidad para simplificar, no para sofisticar artificialmente.</p>
+<h2 id="4-calidad-basada-en-la-confianza-operativa">4. Calidad Basada en la Confianza Operativa</h2>
+<p>La calidad no se mide por el volumen de código producido, sino por la predictibilidad del sistema en producción. Priorizo el desarrollo de software robusto, observable y mantenible, capaz de responder con resiliencia bajo carga o ante fallos. La trazabilidad y la capacidad de recuperación no son agregados tardíos; son parte integral del diseño técnico.</p>
+<h2 id="5-decisiones-fundamentadas-en-el-contexto-real">5. Decisiones Fundamentadas en el Contexto Real</h2>
+<p>El diseño de arquitectura no ocurre en el vacío. Toda solución debe alinearse con las capacidades reales del equipo, los costos de mantenimiento y los objetivos estratégicos de la organización. Favorezco el pragmatismo basado en datos y métricas sobre la adopción impulsiva de tendencias tecnológicas. La mejor tecnología no es la más novedosa, sino la más adecuada para el contexto.</p>
+<h2 id="6-observabilidad-y-operabilidad-desde-la-base">6. Observabilidad y Operabilidad desde la Base</h2>
+<p>Un sistema que no puede entenderse ni gestionarse eficientemente en producción no está terminado. Diseño plataformas con mecanismos de visibilidad nativos: métricas, logging estructurado y monitoreo continuo. La capacidad de diagnosticar y evolucionar un entorno depende directamente de qué tan evidente sea su comportamiento en tiempo real. La operación es parte de la arquitectura.</p>
+<h2 id="7-habilitacion-de-equipos-y-autonomia-organizacional">7. Habilitación de Equipos y Autonomía Organizacional</h2>
+<p>La tecnología debe amplificar la capacidad de las personas, no convertirse en una barrera. Construyo plataformas, estándares y procesos diseñados para reducir la carga cognitiva, mitigar la fricción y facultar a los equipos a iterar de forma segura y autónoma. Una arquitectura verdaderamente saludable no solo escala a nivel técnico, también escala a nivel organizacional.</p>
+<h2 id="8-gestion-de-compensaciones-como-eje-tecnico-trade-offs">8. Gestión de Compensaciones como Eje Técnico (Trade-offs)</h2>
+<p>Toda decisión técnica introduce beneficios, costos y restricciones. No persigo arquitecturas ideales en abstracto; busco soluciones equilibradas entre complejidad, costo operativo, velocidad de entrega, resiliencia y capacidad de evolución. Entiendo que la ingeniería madura consiste en gestionar trade-offs de manera consciente y transparente, tomando decisiones alineadas al contexto real del negocio y del equipo.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../filosofia-ingenieria/" class="btn btn-neutral float-left" title="Filosofía de ingeniería"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../practicas/liderazgo/" class="btn btn-neutral float-right" title="Estilo de liderazgo">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../filosofia-ingenieria/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../practicas/liderazgo/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Ciclo de Vida de Calidad Automatizada - Damian Gonzalez</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ciclo de Vida de Calidad Automatizada";
+        var mkdocs_page_input_path = "estandares/error-handler.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/picture.jpg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Perfil profesional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/filosofia-ingenieria/">Filosofía de ingeniería</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../perfil/principios-tecnicos/">Principios técnicos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/liderazgo/">Estilo de liderazgo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Practicas de ingeniería</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/toma-requerimientos/">Ingeniería de requerimientos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/arquitectura/">Definición e Ingeniería de Arquitectura</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../practicas/planificacion/">Planificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estandares de calidad</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../patrones-codigo/">Gobernanza de Plataforma y Caminos Seguros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../patrones-diseno/">Arquitectura de Software y Patrones de Diseño</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Ciclo de Vida de Calidad Automatizada</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#i-estrategia-de-validacion-automatizada-y-quality-gates">I. Estrategia de Validación Automatizada y Quality Gates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ii-gobierno-tecnico-code-review-y-criterio-humano">II. Gobierno Técnico, Code Review y Criterio Humano</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#iii-calidad-orientada-a-la-confiabilidad-operativa">III. Calidad Orientada a la Confiabilidad Operativa</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#iv-gobierno-metrico-y-mejora-continua">IV. Gobierno Métrico y Mejora Continua</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ingenieria de plataformas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/develop-toolkit/">Develop Toolkit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/transactional-framework/">Transacctional framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/async-framework/">Async framework</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../herramientas/messaging-platform/">Messaging platform</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Damian Gonzalez</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Estandares de calidad</li>
+      <li class="breadcrumb-item active">Ciclo de Vida de Calidad Automatizada</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ciclo-de-vida-de-calidad-automatizada">Ciclo de Vida de Calidad Automatizada</h1>
+<p>Concibo la calidad de software como una capacidad sistémica integrada al ciclo de vida completo de ingeniería, no como una validación aislada ejecutada únicamente antes de liberar cambios a producción. Mi enfoque parte del principio de que la calidad debe construirse desde las primeras etapas del desarrollo mediante mecanismos automatizados de validación, gobierno técnico, observabilidad continua y criterios operativos claramente definidos, reduciendo progresivamente la variabilidad técnica y el riesgo organizacional asociado a cada despliegue.</p>
+<p>El objetivo de este modelo no es burocratizar la entrega de software, sino construir plataformas de ingeniería capaces de habilitar una velocidad sostenible, resiliencia operativa y confianza sistémica. Entiendo la calidad como un habilitador clave para la escalabilidad técnica y humana, donde las plataformas permiten a los equipos operar de forma predecible sin depender de esfuerzos heroicos individuales.</p>
+<p>Para lograrlo, implemento pipelines de calidad estandarizados orientados a detectar tempranamente defectos funcionales, vulnerabilidades de seguridad, desviaciones arquitectónicas y riesgos de mantenibilidad antes de que el software alcance ambientes críticos mediante tres pilares y un modelo de gobernanza métrica:</p>
+<h2 id="i-estrategia-de-validacion-automatizada-y-quality-gates">I. Estrategia de Validación Automatizada y Quality Gates</h2>
+<p>La primera línea de defensa ocurre dentro de las tuberías de Integración Continua (CI), diseñadas para ejecutar controles de calidad de forma repetible, predecible y desacoplada de la intervención manual. Para cargas de trabajo críticas o plataformas con alto impacto operativo, los pipelines incorporan de forma nativa compuertas de calidad (Quality Gates):</p>
+<p>Análisis Estático de Código (SAST y Calidad): Uso de herramientas como SonarQube para evaluar mantenibilidad, duplicidad, complejidad ciclomática y deuda técnica, complementado con escaneos de seguridad pasiva (SAST) mediante plataformas como Aikido, BlackDuck o similares para detectar vulnerabilidades tempranas y reducir superficies de ataque.</p>
+<p>Seguridad en la Cadena de Suministro (SCA): Validación automatizada de dependencias y librerías externas para identificar vulnerabilidades conocidas (CVEs), obsolescencia tecnológica, conflictos de licencias y riesgos asociados al Software Supply Chain.</p>
+<p>Estrategia de Testing Continuo: Ejecución automatizada de pruebas unitarias, de integración, de contratos y validaciones de compatibilidad entre servicios distribuidos, aplicando políticas estrictas de cobertura mínima (Code Coverage) sobre las rutas críticas del negocio.</p>
+<p>Linter Arquitectónico y Convenciones: Validación automatizada del cumplimiento de estructuras de proyecto, convenciones de nombres, políticas de modularidad y estándares de diseño alineados a los Golden Paths definidos para la organización.</p>
+<p>Validaciones Operativas Tempranas: Ejecución de smoke tests, verificaciones de despliegue y pruebas automatizadas sobre entornos efímeros o ambientes temporales de integración para interceptar fallos antes de afectar plataformas compartidas.</p>
+<p>El propósito de estas validaciones no es únicamente bloquear código defectuoso, sino construir mecanismos preventivos que permitan escalar la confianza organizacional sin comprometer el time-to-market.</p>
+<h2 id="ii-gobierno-tecnico-code-review-y-criterio-humano">II. Gobierno Técnico, Code Review y Criterio Humano</h2>
+<p>Entiendo que la automatización no reemplaza el criterio técnico ni el entendimiento contextual del ecosistema. Por ello, reduzco deliberadamente el "ruido" operativo mediante las validaciones automáticas previas, permitiendo que el proceso de Code Review liderado por referentes técnicos o líderes de plataforma se concentre exclusivamente en decisiones de ingeniería de alto impacto:</p>
+<ul>
+<li>Coherencia Arquitectónica y Simplicidad: Validación de la adherencia a patrones de diseño, principios de desacoplamiento, límites de dominio (Bounded Contexts) y consistencia con la arquitectura definida.</li>
+<li>Sostenibilidad y Evolución: Identificación temprana de riesgos de acoplamiento excesivo, deuda técnica innecesaria, sobreingeniería o decisiones que puedan comprometer la mantenibilidad futura del sistema.</li>
+<li>Operabilidad y Observabilidad: Verificación de que el software esté preparado para operar correctamente en producción, validando la instrumentación, telemetría distribuida, manejo tipificado de errores y trazabilidad transaccional.</li>
+<li>Seguridad y Exposición de Riesgo: Revisión contextual de accesos, gestión segura de secretos, validaciones de autorización y exposición innecesaria de datos o capacidades críticas.</li>
+</ul>
+<p>Concibo el Code Review como un mecanismo de alineación técnica y transferencia de conocimiento, no como un proceso burocrático de aprobación jerárquica. Su propósito principal es elevar el criterio colectivo de ingeniería.</p>
+<h2 id="iii-calidad-orientada-a-la-confiabilidad-operativa">III. Calidad Orientada a la Confiabilidad Operativa</h2>
+<p>Considero que un sistema no está terminado cuando simplemente "funciona", sino cuando demuestra ser capaz de operar de manera resiliente, observable y recuperable bajo condiciones reales de producción. Entiendo la operación como una extensión natural de la arquitectura; por ello, el proceso de calidad evalúa la robustez del ecosistema mediante:</p>
+<ul>
+<li>Resiliencia Distribuida: Verificación del comportamiento de mecanismos de protección ante fallos como Circuit Breakers, retries con backoff, timeouts, degradación controlada y aislamiento de recursos (Bulkheads).</li>
+<li>Compatibilidad y Despliegue Seguro: Estrategias orientadas a mantener compatibilidad hacia atrás entre servicios, despliegues progresivos, rollbacks limpios y atómicos, y reducción del impacto durante ventanas de liberación continua.</li>
+<li>Observabilidad como Capacidad Nativa: Validación de la exposición adecuada de métricas, logging estructurado y trazabilidad distribuida para facilitar el diagnóstico inmediato y la respuesta eficiente ante incidentes en entornos productivos.</li>
+</ul>
+<h2 id="iv-gobierno-metrico-y-mejora-continua">IV. Gobierno Métrico y Mejora Continua</h2>
+<p>La madurez de ingeniería depende de la capacidad de medir, analizar y evolucionar continuamente los procesos de entrega. Por ello, complemento el ciclo de calidad con indicadores operativos y métricas de ingeniería estandarizadas para evaluar objetivamente la salud del ecosistema tecnológico:</p>
+<ul>
+<li>Métricas DORA de Rendimiento y Estabilidad: Monitoreo constante de Deployment Frequency, Lead Time for Changes, Change Failure Rate y Time to Restore Service (MTTR).</li>
+<li>Indicadores de Salud del Código: Seguimiento a las tendencias de acumulación de deuda técnica, cobertura de pruebas automáticas y estabilidad operativa posterior a los despliegues.</li>
+</ul>
+<p>Estas métricas no buscan ejercer vigilancia sobre los equipos, sino identificar fricciones sistémicas, eliminar cuellos de botella y descubrir oportunidades reales de mejora continua.</p>
+<p>Filosofía de Calidad: Mi objetivo no es construir procesos rígidos que ralenticen a las células de desarrollo, sino diseñar plataformas de ingeniería capaces de habilitar velocidad, estabilidad y evolución continua de manera simultánea. Creo que una organización madura no depende de individuos heroicos para mantener la consistencia de sus sistemas, sino de procesos predecibles, estándares claros y plataformas vivas capaces de garantizar calidad de forma consistente, escalable y resiliente frente al cambio.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../patrones-diseno/" class="btn btn-neutral float-left" title="Arquitectura de Software y Patrones de Diseño"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../herramientas/develop-toolkit/" class="btn btn-neutral float-right" title="Develop Toolkit">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../patrones-diseno/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../herramientas/develop-toolkit/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
